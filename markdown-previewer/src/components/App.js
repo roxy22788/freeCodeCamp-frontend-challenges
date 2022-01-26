@@ -26,6 +26,8 @@ function App() {
           onChange={handleChangeEdit} />
       </div>
       <div className='preview'>
+        <ToolBar 
+          text='Preview'/>
         <Preview
           markdown={markedV} />
       </div>

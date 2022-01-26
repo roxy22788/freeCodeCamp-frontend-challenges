@@ -1,6 +1,8 @@
 function Preview(props) {
     return (
-        <div dangerouslySetInnerHTML={{__html: props.markdown}} />
+        <div
+            className='previewContainer' 
+            dangerouslySetInnerHTML={{__html: props.markdown}} />
     );
 }
 

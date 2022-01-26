@@ -1,13 +1,11 @@
 .toolBar {
     max-width: 100%;
-    padding: 10px;
     border: 1px solid black;
-    border-bottom: none;
-
     background-color: #4aa3a3;
 }
 
 .toolBar p {
     font-size: 18px;
     font-weight: bolder;
+    margin: 10px 10px;
 }
