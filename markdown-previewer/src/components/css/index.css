@@ -24,6 +24,27 @@
   background-color: #c0d8d8;
 }
 
+
+@media (max-width: 830px) {
+  .editor {
+    width: 400px;
+  }
+
+  .preview {
+    width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .editor {
+    width: 300px;
+  }
+
+  .preview {
+    width: 350px;
+  }
+}
+
 .preview .previewContainer {
   padding: 5px;
 }
