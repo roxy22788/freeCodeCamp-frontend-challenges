@@ -1,0 +1,12 @@
+.editor {
+    width: 600px;
+    margin: 10px auto 0 auto;
+    box-shadow: 0 0 10px  black;
+}
+
+.preview {
+    width: 800px;
+    min-height: 200px;
+    margin: 10px auto 0 auto;
+    border: 1px solid black;
+}

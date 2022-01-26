@@ -1,11 +1,12 @@
+import './css/index.css';
+
 function Editor(props) {
     return (
-        <div>
-            <textarea 
-                value={props.markdown}
-                onChange={props.onChange}
-                type='text'/>
-        </div>
+        <textarea
+            className='textAreaEditor' 
+            value={props.markdown}
+            onChange={props.onChange}
+            type='text'/>
     );
 }
 

@@ -1,8 +1,11 @@
 import { React, useState } from 'react';
 import { marked } from 'marked';
 
+import ToolBar from './ToolBar';
 import Editor from './Editor';
 import Preview from './Preview';
+
+import './css/index.css'
 
 function App() {
   const [markdown, setMarkdown] = useState('');
@@ -15,12 +18,17 @@ function App() {
 
   return (
     <div>
-      <Editor 
-        markdown={markdown}
-        onChange={handleChangeEdit} />
-      
-      <Preview 
-        markdown={markedV} />
+      <div className='editor'>
+        <ToolBar 
+          text='Editor'/>
+        <Editor
+          markdown={markdown}
+          onChange={handleChangeEdit} />
+      </div>
+      <div className='preview'>
+        <Preview
+          markdown={markedV} />
+      </div>
     </div>
   );
 }
