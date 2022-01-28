@@ -1,9 +1,9 @@
-import './App.css';
+import DrumPad from "./components/DrumPad";
 
 function App() {
   return (
     <div>
-
+      <DrumPad />
     </div>
   );
 }
