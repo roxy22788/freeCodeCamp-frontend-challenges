@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 
 import PandBank from './components/PadBank';
-import DrumPad from "./components/DrumPad";
-
-import './App.scss';
-
 import { bankOne, bankTwo } from './data/data.js'
 
 function App() {
