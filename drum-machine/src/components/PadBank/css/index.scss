@@ -1,0 +1,9 @@
+$padWidth: 100px;
+$padHeigth: 80px;
+
+
+.padsContainer {
+    width: $padWidth * 3 + 32;
+    height: $padHeigth * 3 + 32;
+    background-color: black;
+}

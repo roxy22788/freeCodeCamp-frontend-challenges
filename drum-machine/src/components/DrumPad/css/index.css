@@ -1,12 +1,13 @@
 .drumPad {
     width: 100px;
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    float: left;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.548);
     font-size: 18px;
-    border: 2px solid blue;
-    box-shadow: 1px 1px 2px black;
-    background-color: rgb(86, 158, 158);
+    border: 2px solid rgb(71, 71, 71);
+    background-color: rgb(46, 46, 46);
 }
