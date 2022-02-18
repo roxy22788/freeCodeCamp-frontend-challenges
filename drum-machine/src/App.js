@@ -3,7 +3,10 @@ import { useEffect, useState } from "react";
 import PandBank from './components/PadBank';
 import { bankOne, bankTwo } from './data/data.js'
 
+import './App.css';
+
 function App() {
+  const [currentBank, setCurrentBank] = useState(bankOne);
   const [volume, setVolume] = useState(0.5);
 
   useEffect(() => {
@@ -18,13 +21,21 @@ function App() {
     setVolume(event.target.value);
   }
 
+  function changeBank() {
+    if (currentBank == bankOne) {
+      setCurrentBank(bankTwo);
+    } else {
+      setCurrentBank(bankOne);
+    }
+  }
+
   return (
     <div className='container'>
       <PandBank 
-        currentPadBank={bankOne}
+        currentPadBank={currentBank}
         vol={volume}/>
         
-      <div>
+      <div className="controlsContainer">
         <div className="sliderVolumeContainer">
           {`volume: ${Math.floor(volume * 100)}`}
           <input 
@@ -35,6 +46,18 @@ function App() {
             step={0.01}
             onChange={handleChangeVolume}
           />
+        </div>
+        <div className="changeBankContainer">
+          <p>
+            {
+              currentBank == bankOne? 'Bank1'
+              : 'Bank2'
+            }
+          </p>
+          <input
+            className="inputChangeBank"
+            type='checkbox'
+            onClick={changeBank} />
         </div>
       </div>
     </div>

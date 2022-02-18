@@ -4,7 +4,11 @@ import DrumPad from "../DrumPad"
 import './css/index.scss';
 
 function PadBank(props) {
-    const [padBank, setPadBank] = useState(createPadbank());
+    const [padBank, setPadBank] = useState();
+
+    useEffect(() => {
+        setPadBank(createPadbank());
+    }, [props.currentPadBank])
 
     function createPadbank() {
         let seila = []
